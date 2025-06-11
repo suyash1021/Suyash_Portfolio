@@ -1,0 +1,36 @@
+
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-3d {
+    perspective: 1000px;
+  }
+  
+  .card-content {
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d;
+  }
+  
+  .card-3d:hover .card-content {
+    transform: translateZ(20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  } 
+
+  @keyframes pulsate {
+    0% {  
+      box-shadow: 0 0 5px rgba(48, 139, 242, 0.957), 0 0 10px rgba(66, 132, 254, 0.947), 0 0 15px #4471edef;
+    }
+    50% {
+      box-shadow: 0 0 15px rgb(57, 106, 231), 0 0 30px rgb(69, 131, 238), 0 0 45px rgb(57, 111, 227);
+    }
+    100% {
+      box-shadow: 0 0 5px rgb(73, 138, 244), 0 0 10px rgba(54, 123, 234, 0.998), 0 0 15px rgb(37, 118, 205);
+    }
+  }
+  
+  /* Add a Tailwind utility class for the pulsate animation */
+  .animate-pulsate {
+    animation: pulsate 1.5s infinite;
+  }

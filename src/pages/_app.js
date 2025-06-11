@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
         ></link>
 
         <meta charSet="utf-8" />
-        <title>Welcome To Avivas Asset</title>
+        <title className="text-blue-500">  &#60;/&#62; Suyash_Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/avivaicon.png" />
         <meta name="robots" content="index, follow" />
         <meta

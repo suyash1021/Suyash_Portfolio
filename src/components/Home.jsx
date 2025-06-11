@@ -1014,8 +1014,8 @@ const Internationalbankaccount = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/SP-Resume-2025.pdf";
-                link.download = "SP-Resume-2025.pdf";
+                link.href = "/Suyash-React-Developer.pdf";
+                link.download = "Suyash-React-Developer.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
